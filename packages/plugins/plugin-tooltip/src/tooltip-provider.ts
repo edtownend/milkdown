@@ -135,7 +135,7 @@ export class TooltipProvider {
 
     if (virtualElement) {
       computePosition(virtualElement, this.element, {
-        placement: 'top',
+        placement: 'bottom-start',
         middleware: [flip(), offset(this.#offset)],
       })
         .then(({ x, y }) => {
